@@ -140,8 +140,12 @@ h1 {
 .button:hover { background: var(--blue-deep); color: var(--white); }
 
 /* ---------- footer ---------- */
-footer { background: var(--panel); padding-block: 1rem; font-size: .82rem; color: var(--muted); }
-footer .wrap { display: flex; flex-wrap: wrap; gap: .3rem 1.5rem; }
+footer { background: var(--panel); padding-block: 1.5rem 1rem; font-size: .82rem; color: var(--muted); }
+.funding h2 { margin: 0 0 .9rem; font-size: 1rem; font-weight: 700; color: var(--blue); }
+.funding-text { margin: 0; max-width: 125ch; line-height: 1.65; }
+.funding-text strong { font-weight: 600; color: var(--ink); white-space: nowrap; }
+.funding-note { margin: 1.1rem 0 0; font-style: italic; }
+.address { display: flex; flex-wrap: wrap; gap: .3rem 1.5rem; margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--line); }
 footer a { color: var(--red); font-weight: 600; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
@@ -235,7 +239,7 @@ dialog.modal[open] { animation: pop .18s ease-out; }
         <li><a href="https://www.researchluxembourg.org/en/covid-19-task-force/projects/covalux/" target="_blank" rel="noopener noreferrer">CoVaLux</a></li>
         <li><a href="https://fairclinical.github.io/" target="_blank" rel="noopener noreferrer">FAIRClinical</a></li>
         <li><a href="https://www.uni.lu/lcsb-en/research-groups/clinical-translational-informatics/research/#aid-care" target="_blank" rel="noopener noreferrer">AID-Care</a></li>
-        <li><a href="https://www.uni.lu/lcsb-en/research-groups/clinical-translational-informatics/research/#our-research-projects" target="_blank" rel="noopener noreferrer">BRAINPATH</a></li>
+        <li><a href="https://www.uni.lu/lcsb-en/research-groups/clinical-translational-informatics/research/#brainpath" target="_blank" rel="noopener noreferrer">BRAINPATH</a></li>
       </ul>
     </div>
     <h2 class="section-title" id="diagram-title">The assembly, layer by layer</h2>
@@ -265,7 +269,22 @@ dialog.modal[open] { animation: pop .18s ease-out; }
 </main>
 
 <footer>
-  <div class="wrap">
+  <section class="wrap funding" aria-labelledby="funding-title">
+    <h2 id="funding-title">Funding acknowledgement</h2>
+    <p class="funding-text">
+      <strong>LEOPARD</strong> has received funding from HORIZON Europe.
+      <strong>ORCHESTRA</strong> has received funding from HORIZON 2020.
+      <strong>BIOMAP</strong>, <strong>ImmUniverse</strong> and <strong>imSAVAR</strong> have received funding from the Innovative Medicines Initiative 2 Joint Undertaking (IMI2 JU).
+      <strong>CLINNOVA</strong> has received funding from the Luxembourg National Research Fund (FNR) through the National Centres of Excellence in Research (NCER) programme.
+      <strong>AID-Care</strong> has received funding from the Luxembourg National Research Fund (FNR) through BRIDGES, and from the Luxembourg Ministry of Economy.
+      <strong>FAIRClinical</strong> has received funding from CHIST-ERA and the Luxembourg National Research Fund (FNR).
+      <strong>BRAINPATH</strong> has received funding from the Luxembourg National Research Fund (FNR) through JUMP, and from the Luxembourg Ministry of Economy.
+      <strong>CON-VINCE</strong> has received funding from the Luxembourg National Research Fund (FNR) and the Fondation André Losch.
+      <strong>HeBA</strong> has received funding from the Michael J. Fox Foundation.
+    </p>
+    <p class="funding-note">Views and opinions expressed are those of the authors only and do not necessarily reflect those of the funders.</p>
+  </section>
+  <div class="wrap address">
     <span>University of Luxembourg</span>
     <span>Luxembourg Centre for Systems Biomedicine</span>
     <span>6 avenue du Swing L-4367 Belvaux</span>
